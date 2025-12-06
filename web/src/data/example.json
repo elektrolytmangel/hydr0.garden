@@ -1,0 +1,258 @@
+[
+  {
+    "id": "plant-001",
+    "friendlyName": "Monstera Deliciosa",
+    "latinName": "Monstera deliciosa",
+    "species": "Monstera",
+    "description": "A stunning tropical plant with large, glossy leaves that develop natural splits and holes as they mature. Known as the Swiss Cheese Plant for its distinctive fenestrations.",
+    "careInstructions": "Bright indirect light, water when top 2 inches of soil are dry. Prefers humidity above 60%.",
+    "status": "alive",
+    "imgSrc": "/plants/monstera-deliciosa.jpg",
+    "location": {
+      "country": "Mexico",
+      "additionalInfo": "Native to Central American rainforests",
+      "latitude": 19.4326,
+      "longitude": -99.1332
+    }
+  },
+  {
+    "id": "plant-002",
+    "friendlyName": "Snake Plant",
+    "latinName": "Dracaena trifasciata",
+    "species": "Dracaena",
+    "description": "A hardy succulent with striking sword-shaped leaves featuring beautiful variegated patterns. One of the most tolerant houseplants.",
+    "careInstructions": "Tolerates low light, water sparingly every 2-3 weeks. Drought tolerant and nearly indestructible.",
+    "status": "alive",
+    "imgSrc": "/plants/snake-plant.jpg",
+    "location": {
+      "country": "Nigeria",
+      "additionalInfo": "West African tropical regions",
+      "latitude": 9.082,
+      "longitude": 8.6753
+    }
+  },
+  {
+    "id": "plant-003",
+    "friendlyName": "Fiddle Leaf Fig",
+    "latinName": "Ficus lyrata",
+    "species": "Ficus",
+    "description": "An elegant tree with large, violin-shaped leaves. A statement plant that adds architectural interest to any space.",
+    "careInstructions": "Bright indirect light, water when top inch of soil is dry. Rotate regularly for even growth.",
+    "status": "recovering",
+    "imgSrc": "/plants/fiddle-leaf-fig.jpg",
+    "location": {
+      "country": "Cameroon",
+      "additionalInfo": "Lowland tropical rainforest",
+      "latitude": 3.848,
+      "longitude": 11.5021
+    }
+  },
+  {
+    "id": "plant-004",
+    "friendlyName": "Pothos",
+    "latinName": "Epipremnum aureum",
+    "species": "Epipremnum",
+    "description": "A versatile trailing vine with heart-shaped leaves in golden-green hues. Perfect for hanging baskets or climbing poles.",
+    "careInstructions": "Low to bright indirect light, water when soil feels dry. Very forgiving and easy to propagate.",
+    "status": "alive",
+    "imgSrc": "/plants/pothos.jpg",
+    "location": {
+      "country": "French Polynesia",
+      "additionalInfo": "Mo'orea Island",
+      "latitude": -17.5388,
+      "longitude": -149.8295
+    }
+  },
+  {
+    "id": "plant-005",
+    "friendlyName": "Bird of Paradise",
+    "latinName": "Strelitzia reginae",
+    "species": "Strelitzia",
+    "description": "A tropical beauty with large paddle-shaped leaves and exotic orange and blue flowers resembling a bird in flight.",
+    "careInstructions": "Bright direct light, water thoroughly when top 2 inches are dry. Requires space to grow.",
+    "status": "alive",
+    "imgSrc": "/plants/bird-of-paradise.jpg",
+    "location": {
+      "country": "South Africa",
+      "additionalInfo": "Eastern Cape Province",
+      "latitude": -33.9249,
+      "longitude": 18.4241
+    }
+  },
+  {
+    "id": "plant-006",
+    "friendlyName": "Peace Lily",
+    "latinName": "Spathiphyllum wallisii",
+    "species": "Spathiphyllum",
+    "description": "An elegant plant with glossy dark green leaves and distinctive white spathes. Known for its air-purifying qualities.",
+    "careInstructions": "Low to medium light, keep soil consistently moist but not waterlogged. Wilts when thirsty.",
+    "status": "alive",
+    "imgSrc": "/plants/peace-lily.jpg",
+    "location": {
+      "country": "Colombia",
+      "additionalInfo": "Tropical rainforest undergrowth",
+      "latitude": 4.5709,
+      "longitude": -74.2973
+    }
+  },
+  {
+    "id": "plant-007",
+    "friendlyName": "Rubber Plant",
+    "latinName": "Ficus elastica",
+    "species": "Ficus",
+    "description": "A bold plant with large, thick, glossy leaves in deep burgundy or green. Makes an impressive floor plant.",
+    "careInstructions": "Bright indirect light, water when top inch is dry. Wipe leaves regularly to remove dust.",
+    "status": "alive",
+    "imgSrc": "/plants/rubber-plant.jpg",
+    "location": {
+      "country": "India",
+      "additionalInfo": "Northeast Assam region",
+      "latitude": 26.2006,
+      "longitude": 92.9376
+    }
+  },
+  {
+    "id": "plant-008",
+    "friendlyName": "Boston Fern",
+    "latinName": "Nephrolepis exaltata",
+    "species": "Nephrolepis",
+    "description": "A lush, feathery fern with gracefully arching fronds. Classic Victorian-era houseplant with timeless appeal.",
+    "careInstructions": "Indirect light, keep soil consistently moist. Requires high humidity and regular misting.",
+    "status": "dying",
+    "imgSrc": "/plants/boston-fern.jpg",
+    "location": {
+      "country": "United States",
+      "additionalInfo": "Florida swamps",
+      "latitude": 25.7617,
+      "longitude": -80.1918
+    }
+  },
+  {
+    "id": "plant-009",
+    "friendlyName": "Jade Plant",
+    "latinName": "Crassula ovata",
+    "species": "Crassula",
+    "description": "A succulent with thick, woody stems and oval-shaped jade green leaves. Symbol of good luck and prosperity.",
+    "careInstructions": "Bright light with some direct sun, water sparingly. Let soil dry completely between waterings.",
+    "status": "alive",
+    "imgSrc": "/plants/jade-plant.jpg",
+    "location": {
+      "country": "South Africa",
+      "additionalInfo": "KwaZulu-Natal Province",
+      "latitude": -29.8587,
+      "longitude": 31.0218
+    }
+  },
+  {
+    "id": "plant-010",
+    "friendlyName": "Calathea Medallion",
+    "latinName": "Calathea roseopicta",
+    "species": "Calathea",
+    "description": "A prayer plant with stunning oval leaves featuring intricate patterns in green, white, and deep purple. Leaves fold up at night.",
+    "careInstructions": "Medium to low indirect light, keep soil moist. Requires high humidity and filtered water.",
+    "status": "alive",
+    "imgSrc": "/plants/calathea-medallion.jpg",
+    "location": {
+      "country": "Brazil",
+      "additionalInfo": "Amazon rainforest floor",
+      "latitude": -3.4653,
+      "longitude": -62.2159
+    }
+  },
+  {
+    "id": "plant-011",
+    "friendlyName": "Aloe Vera",
+    "latinName": "Aloe barbadensis miller",
+    "species": "Aloe",
+    "description": "A medicinal succulent with thick, fleshy leaves containing soothing gel. Both decorative and practical.",
+    "careInstructions": "Bright indirect light, water deeply but infrequently. Drought tolerant desert plant.",
+    "status": "alive",
+    "imgSrc": "/plants/aloe-vera.jpg",
+    "location": {
+      "country": "Oman",
+      "additionalInfo": "Arabian Peninsula",
+      "latitude": 21.4735,
+      "longitude": 55.9754
+    }
+  },
+  {
+    "id": "plant-012",
+    "friendlyName": "Spider Plant",
+    "latinName": "Chlorophytum comosum",
+    "species": "Chlorophytum",
+    "description": "A resilient plant with arching variegated leaves and cascading baby plantlets. Excellent air purifier.",
+    "careInstructions": "Medium to bright indirect light, water regularly. Produces babies that can be propagated.",
+    "status": "alive",
+    "imgSrc": "/plants/spider-plant.jpg",
+    "location": {
+      "country": "South Africa",
+      "additionalInfo": "Coastal forests",
+      "latitude": -33.0183,
+      "longitude": 27.9116
+    }
+  },
+  {
+    "id": "plant-013",
+    "friendlyName": "ZZ Plant",
+    "latinName": "Zamioculcas zamiifolia",
+    "species": "Zamioculcas",
+    "description": "A modern architectural plant with glossy, dark green pinnate leaves on thick stems. Virtually indestructible.",
+    "careInstructions": "Low to bright indirect light, water only when soil is completely dry. Extremely drought tolerant.",
+    "status": "alive",
+    "imgSrc": "/plants/zz-plant.jpg",
+    "location": {
+      "country": "Tanzania",
+      "additionalInfo": "East African grasslands",
+      "latitude": -6.7924,
+      "longitude": 39.2083
+    }
+  },
+  {
+    "id": "plant-014",
+    "friendlyName": "Lavender",
+    "latinName": "Lavandula angustifolia",
+    "species": "Lavandula",
+    "description": "An aromatic herb with slender silvery-green foliage and fragrant purple flower spikes. Beloved by pollinators.",
+    "careInstructions": "Full sun, well-draining soil. Water moderately, allowing soil to dry between waterings.",
+    "status": "unknown",
+    "imgSrc": "/plants/lavender.jpg",
+    "location": {
+      "country": "France",
+      "additionalInfo": "Provence region",
+      "latitude": 43.9493,
+      "longitude": 4.8055
+    }
+  },
+  {
+    "id": "plant-015",
+    "friendlyName": "Chinese Money Plant",
+    "latinName": "Pilea peperomioides",
+    "species": "Pilea",
+    "description": "A charming plant with distinctive round, coin-shaped leaves on delicate stems. Modern Scandinavian favorite.",
+    "careInstructions": "Bright indirect light, water when top inch is dry. Rotate weekly for even growth and produces pups.",
+    "status": "alive",
+    "imgSrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwatchandlearn.scholastic.com%2Fcontent%2Fdam%2Fclassroom-magazines%2Fwatchandlearn%2Fvideos%2Fanimals-and-plants%2Fplants%2Fwhat-are-plants-%2FWhat-Are-Plants.jpg&f=1&nofb=1&ipt=e62288349f6664012b9d6c13d32c0b0ea3e4a285d7ec444f0eb007a0b8a20910",
+    "location": {
+      "country": "China",
+      "additionalInfo": "Yunnan Province mountains",
+      "latitude": 25.0406,
+      "longitude": 102.7129
+    }
+  },
+  {
+    "id": "plant-016",
+    "friendlyName": "Chinese Money Plant",
+    "latinName": "Pilea peperomioides",
+    "species": "Pilea",
+    "description": "A charming plant with distinctive round, coin-shaped leaves on delicate stems. Modern Scandinavian favorite.",
+    "careInstructions": "Bright indirect light, water when top inch is dry. Rotate weekly for even growth and produces pups.",
+    "status": "alive",
+    "imgSrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwatchandlearn.scholastic.com%2Fcontent%2Fdam%2Fclassroom-magazines%2Fwatchandlearn%2Fvideos%2Fanimals-and-plants%2Fplants%2Fwhat-are-plants-%2FWhat-Are-Plants.jpg&f=1&nofb=1&ipt=e62288349f6664012b9d6c13d32c0b0ea3e4a285d7ec444f0eb007a0b8a20910",
+    "location": {
+      "country": "China",
+      "additionalInfo": "Yunnan Province mountains",
+      "latitude": 47,
+      "longitude": 7
+    }
+  }
+]

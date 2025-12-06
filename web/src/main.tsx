@@ -4,8 +4,10 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import "./i18n/i18n.ts";
 import "./index.css";
-import { Background } from "./routes/layouts/background/Background.tsx";
 import { Home } from "./routes/home/Home.tsx";
+import { Background } from "./routes/layouts/background/Background.tsx";
+import PlantInfo from "./routes/plant-info/PlantInfo.tsx";
+import { plantQueryService } from "./services/plant-query.service.ts";
 
 const router = createBrowserRouter([
   {
@@ -17,11 +19,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/plants",
-        // todo: add loader for plants data
+        loader: async () => {
+          const plants = plantQueryService.getAll();
+          return { plants };
+        },
         lazy: () =>
-          import("./routes/plant-list/PlantList.tsx").then((module) => ({
-            Component: module.PlantList,
+          import("./routes/plant-map/PlantMap.tsx").then((module) => ({
+            Component: module.PlantMap,
           })),
+      },
+      {
+        path: "/plants/:plantId",
+        Component: PlantInfo,
+        loader: async ({ params }) => {
+          const plantId = params.plantId;
+          const plant = plantQueryService.getById(plantId!);
+          return { plant };
+        },
       },
     ],
   },
