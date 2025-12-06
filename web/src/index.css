@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Pacifico";
+  font-weight: 300;
+  src: local("Pacifico"),
+    url(./assets/fonts/Pacifico-Regular.ttf) format("truetype");
+}
+
+@theme {
+  /* Background colors - deep forest tones */
+  --color-background: #0b210e;
+
+  /* Foreground/Text colors - soft whites and sage */
+  --color-foreground: #e8f0ee;
+
+  /* Moss accent colors */
+  --color-moss: #4a7c59;
+  --color-moss-light: #5a8c69;
+  --color-moss-dark: #194020;
+
+  --font-serif: "Pacifico", sans-serif;
+}
