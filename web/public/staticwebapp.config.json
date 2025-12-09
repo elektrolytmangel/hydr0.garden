@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json.schemastore.org/staticwebapp.config.json",
+    "navigationFallback": {
+        "rewrite": "/index.html",
+        "exclude": ["/images/*.{png,jpg,gif,ico}", "/css/*"]
+    },
+    "routes": [
+        {
+            "route": "/*.{png,jpg,gif,ico,svg,css,js,json,woff,woff2,ttf,eot}",
+            "headers": {
+                "cache-control": "public, max-age=31536000, immutable"
+            }
+        }
+    ],
+    "responseOverrides": {
+        "404": {
+            "rewrite": "/index.html",
+            "statusCode": 200
+        }
+    },
+    "mimeTypes": {
+        ".json": "application/json",
+        ".js": "text/javascript",
+        ".css": "text/css"
+    }
+}
