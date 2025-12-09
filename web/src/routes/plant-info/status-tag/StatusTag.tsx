@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
 import type { PlantData } from "../../../model/app";
 
-export const StatusTag: React.FC<{ status: PlantData["status"] }> = ({
+export const StatusTag: React.FC<{ status: PlantData["healthStatus"] }> = ({
   status,
 }) => {
   const { t } = useTranslation();
-  const statusColors: Record<PlantData["status"], string> = {
+  const statusColors: Record<PlantData["healthStatus"], string> = {
     alive: "bg-green-700",
     dead: "bg-black",
     dying: "bg-red-700",
