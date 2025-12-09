@@ -44,7 +44,7 @@ export const MapComponent: React.FC<MapComponentProps> = (props) => {
       const feature = features[0];
       const plant = feature.properties as unknown as PlantData;
 
-      navigate(`/plants/${plant.id}`);
+      navigate(`/plants/${plant.documentId}`);
     });
 
     map.on("mouseenter", "plant-markers", () => {

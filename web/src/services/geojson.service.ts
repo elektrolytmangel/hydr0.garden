@@ -9,14 +9,15 @@ import type { PlantData } from "../model/app";
 export function convertPlantsToGeoJSON(
   plants: PlantData[]
 ): FeatureCollection<Point, PlantData> {
-  const features: Feature<Point, PlantData>[] = plants.map((plant) => ({
-    type: "Feature",
-    geometry: {
-      type: "Point",
-      coordinates: [plant.location.longitude, plant.location.latitude],
-    },
-    properties: plant,
-  }));
+  const features: Feature<Point, PlantData>[] = plants
+    .map((plant) => ({
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [plant.origin.longitude, plant.origin.latitude],
+      },
+      properties: plant,
+    }));
 
   return {
     type: "FeatureCollection",

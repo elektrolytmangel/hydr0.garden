@@ -1,5 +1,6 @@
 import type { FeatureCollection, Point } from "geojson";
-import type { PlantData } from "../model/app";
+import { backendApi } from "../api/backend";
+import type { PlantData, StrapiResponse } from "../model/app";
 import { convertPlantsToGeoJSON } from "./geojson.service";
 
 interface CacheEntry {
@@ -23,27 +24,34 @@ class PlantQueryService {
   /**
    * Fetches and caches the plant data as GeoJSON
    */
-  private fetchAndCache(): FeatureCollection<Point, PlantData> {
-    const plants = [] as PlantData[];
-    const geoJson = convertPlantsToGeoJSON(plants);
+  private async fetchAndCache(): Promise<FeatureCollection<Point, PlantData>> {
+    try {
+      const response = await backendApi.get<StrapiResponse<PlantData[]>>(
+        "/plants?populate=*"
+      );
+      const geoJson = convertPlantsToGeoJSON(response.data.data);
 
-    this.cache = {
-      data: geoJson,
-      timestamp: Date.now(),
-    };
+      this.cache = {
+        data: geoJson,
+        timestamp: Date.now(),
+      };
 
-    return geoJson;
+      return geoJson;
+    } catch (error) {
+      console.error("Error fetching plant data:", error);
+      throw error;
+    }
   }
 
   /**
    * Gets all plants as a GeoJSON FeatureCollection
    * @returns GeoJSON FeatureCollection with all plants
    */
-  getAll(): FeatureCollection<Point, PlantData> {
+  async getAll(): Promise<FeatureCollection<Point, PlantData>> {
     if (this.isCacheValid()) {
       return this.cache!.data;
     }
-    return this.fetchAndCache();
+    return await this.fetchAndCache();
   }
 
   /**
@@ -51,12 +59,16 @@ class PlantQueryService {
    * @param id - The plant ID to search for
    * @returns The plant data or undefined if not found
    */
-  getById(id: string): PlantData | undefined {
-    const geoJson = this.getAll();
-    const feature = geoJson.features.find(
-      (feature) => feature.properties.id === id
-    );
-    return feature?.properties;
+  async getById(id: string): Promise<PlantData | undefined> {
+    try {
+      const response = await backendApi.get<StrapiResponse<PlantData>>(
+        `/plants/${id}?populate=*`
+      );
+      return response.data.data;
+    } catch (error) {
+      console.error(`Error fetching plant with ID ${id}:`, error);
+      return undefined;
+    }
   }
 }
 

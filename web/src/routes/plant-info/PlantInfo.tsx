@@ -11,7 +11,7 @@ import { StatusTag } from "./status-tag/StatusTag";
 export const PlantInfo: React.FC = () => {
   const { t } = useTranslation();
   const { plant } = useLoaderData() as { plant: PlantData | undefined };
-  const imageUrl = plant?.imgSrc;
+  const imageUrl = plant?.image?.formats?.medium?.url;
   const backgroundStyle = cn(
     "overflow-auto",
     "rounded-sm",
@@ -32,7 +32,7 @@ export const PlantInfo: React.FC = () => {
           <div className="relative w-full h-50 object-cover bg-[#0a0e0d] overflow-hidden rounded-t-sm">
             <img
               src={imageUrl}
-              alt={plant?.friendlyName}
+              alt={plant?.name}
               className="w-full h-full object-cover opacity-90"
             />
           </div>
@@ -42,16 +42,16 @@ export const PlantInfo: React.FC = () => {
           <div className="border-b border-foreground/50 pb-4 flex flex-col md:flex-row justify-between items-start gap-6">
             <div>
               <h1 className="text-3xl font-light text-foreground mb-2">
-                {plant?.friendlyName}
+                {plant?.name}
               </h1>
               <Paragraph className="font-light">
-                {plant?.latinName} / {plant?.species}
+                {plant?.latinName} / {plant?.family}
               </Paragraph>
             </div>
             <div className="flex md:flex-col md:items-end md:justify-between gap-2 my-auto w-full md:w-auto">
-              <StatusTag status={plant?.status || "unknown"} />
+              <StatusTag status={plant?.healthStatus || "unknown"} />
               <Paragraph className="text-base! font-light text-wrap">
-                {plant?.location?.country} / {plant?.location?.additionalInfo}{" "}
+                {plant?.origin?.country} / {plant?.origin?.additionalInfo}{" "}
               </Paragraph>
             </div>
           </div>
@@ -80,7 +80,7 @@ export const PlantInfo: React.FC = () => {
 
           <div className="pt-4 border-t border-foreground/50">
             <Paragraph className="text-sm! text-foreground/60 font-mono">
-              ID: {plant?.id}
+              ID: {plant?.documentId}
             </Paragraph>
           </div>
         </div>

@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       {
         path: "/plants",
         loader: async () => {
-          const plants = plantQueryService.getAll();
+          const plants = await plantQueryService.getAll();
           return { plants };
         },
         lazy: () =>
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
         Component: PlantInfo,
         loader: async ({ params }) => {
           const plantId = params.plantId;
-          const plant = plantQueryService.getById(plantId!);
+          const plant = await plantQueryService.getById(plantId!);
           return { plant };
         },
       },
