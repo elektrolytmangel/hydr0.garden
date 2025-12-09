@@ -1,5 +1,4 @@
 import type { FeatureCollection, Point } from "geojson";
-import exampleData from "../data/example.json";
 import type { PlantData } from "../model/app";
 import { convertPlantsToGeoJSON } from "./geojson.service";
 
@@ -25,7 +24,7 @@ class PlantQueryService {
    * Fetches and caches the plant data as GeoJSON
    */
   private fetchAndCache(): FeatureCollection<Point, PlantData> {
-    const plants = exampleData as PlantData[];
+    const plants = [] as PlantData[];
     const geoJson = convertPlantsToGeoJSON(plants);
 
     this.cache = {
