@@ -21,11 +21,12 @@ export const PlantInfo: React.FC = () => {
     "shadow-sm",
     "shadow-black/10 ",
     "bg-white/10",
-    "mt-10"
+    "mt-10",
+    "w-full"
   );
 
   return (
-    <div className="flex flex-col items-center justify-start min-h-screen p-4 h-screen max-w-3xl mx-auto ">
+    <div className="flex flex-col items-center justify-start min-h-screen p-4 h-screen max-w-3xl mx-auto">
       <Title />
       <div className={backgroundStyle}>
         {imageUrl && (

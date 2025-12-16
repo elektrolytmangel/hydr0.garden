@@ -28,12 +28,10 @@ export const ErrorBoundary = () => {
   }
 
   return (
-    <div className="flex flex-col h-full w-full items-center justify-center relative text-center px-6">
+    <div className="bg-background h-screen overflow-hidden flex flex-col w-full items-center justify-center relative text-center px-6">
       <div className="max-w-2xl">
         <Title />
-        <hr className="text-white w-2/3 mx-auto mt-6" />
-
-        <div className="mt-12 mb-8 w-full rounded-sm p-8 bg-white/10 backdrop-blur-sm flex flex-col items-center justify-center gap-4">
+        <div className="flex flex-col gap-4 my-16 mx-auto">
           <div className="text-8xl md:text-9xl font-serif text-moss-light opacity-80">
             {errorCode}
           </div>
