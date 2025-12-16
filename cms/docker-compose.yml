@@ -1,0 +1,10 @@
+services:
+  hydr0.garden-cms:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    container_name: hydr0.garden-cms
+    image: ghcr.io/elektrolytmangel/hydr0.garden-cms:latest
+    restart: unless-stopped
+    ports:
+      - "1337:1337"
