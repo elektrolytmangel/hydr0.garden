@@ -11,7 +11,8 @@ import { StatusTag } from "./status-tag/StatusTag";
 export const PlantInfo: React.FC = () => {
   const { t } = useTranslation();
   const { plant } = useLoaderData() as { plant: PlantData | undefined };
-  const imageUrl = plant?.image?.formats?.medium?.url;
+  const imageUrl =
+    import.meta.env.VITE_APP_BACKEND_URL + plant?.image?.formats?.medium?.url;
   const backgroundStyle = cn(
     "overflow-auto",
     "rounded-sm",
