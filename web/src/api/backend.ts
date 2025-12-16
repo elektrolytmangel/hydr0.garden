@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const backendApi = axios.create({
-  baseURL: "https://stylish-action-13d8141cb2.strapiapp.com/api/",
-  timeout: 10000,
+  baseURL: import.meta.env.VITE_APP_BACKEND_URL,
+  timeout: 15000,
 });
