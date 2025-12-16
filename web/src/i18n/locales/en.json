@@ -15,6 +15,10 @@
     "careInstructions": "Care Instructions"
   },
   "close": "Close",
+  "error": {
+    "title": "Oops! Something went wrong",
+    "backToGarden": "Back to Garden"
+  },
   "plantStatus": {
     "alive": "Alive",
     "dead": "Dead",

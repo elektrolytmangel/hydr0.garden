@@ -4,6 +4,7 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import "./i18n/i18n.ts";
 import "./index.css";
+import { ErrorBoundary } from "./routes/error-boundary/ErrorBoundary.tsx";
 import { Home } from "./routes/home/Home.tsx";
 import { Background } from "./routes/layouts/background/Background.tsx";
 import PlantInfo from "./routes/plant-info/PlantInfo.tsx";
@@ -38,6 +39,7 @@ const router = createBrowserRouter([
         },
       },
     ],
+    ErrorBoundary: () => <ErrorBoundary />,
   },
 ]);
 
